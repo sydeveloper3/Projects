@@ -1,0 +1,475 @@
+*
+{
+    margin:0;
+    padding: 0; 
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box ;
+  
+
+}
+
+body {
+    background-color: #002633;
+}
+
+header {
+    width: 100%;
+    height: 120px;
+}
+
+.navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-top: 2rem;
+    margin-right: 0px;
+    justify-content: space-between;
+}
+
+li {
+    width: 8rem;
+    float: left;
+    list-style: none;
+    display: flexbox;
+}
+
+li a {
+    width: 120px;
+    font-size: 1rem;
+    text-align: center;
+    color: #7697A2;
+    text-decoration: none;
+}
+
+.slider-image {
+    width: 100%;
+    height: 80vh;
+}
+
+.back-img {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: url(img/slider-img1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.slider-image p {
+    position: absolute;
+}
+
+.container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+
+.container1 {
+    width: 50%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.container2 {
+    width: 50%;
+    height: 100%;
+}
+
+.content1 {
+    background-color: #C81010;
+    
+}
+.content{
+   padding-left: 1rem;
+}
+
+.content2 {
+    background-color: #005881;
+}
+
+.content3 {
+    background-color: #E4A600;
+}
+
+.content4 {
+    background-color: #00B5A6;
+}
+
+.container2 img {
+    width: 100%;
+}
+/* ........................ */
+
+
+.text {
+    width: 100%;
+    height: 30vh;
+    color: white;
+}
+
+.text-main {
+    margin: 10% 25%;
+}
+
+.text-main p {
+    color: #7697A2;
+    font-weight: 600;
+    padding: 20px 0px;
+}
+
+.bottom-img {
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 48% 50%;
+    gap: 20px;
+}
+
+.img1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.img2 {
+    color: white;
+    font-size: 3.52rem;
+    background-color: #00B5A6;
+}
+
+.footer {
+    width: 100%;
+    height: 40vh;
+    color: white;
+    display: grid;
+}
+
+.footer .second {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 25px;
+    margin: auto;
+}
+
+.footer img {
+    width: 250px;
+    height: 150px;
+}
+
+.nav-wrapper li:hover{
+    color: rgb(183, 187, 190);
+    box-shadow: 2px 3px #423434;
+    background-color: #25353a;
+    opacity: 1;
+}
+/* ---------------------------------- slide --------------------------------------------- */
+    .gallery
+    {
+        width: 1250px;
+        display:flex ;
+        overflow-x: scroll;
+
+
+    }
+    .containers
+    {
+        
+            width: 100%;
+            height: 61vh;
+            display: flex;
+          
+            
+        }
+
+    
+    .gallery div {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap:20px;
+        padding:0px ;
+        flex: none;
+    }
+    .gallery div img {
+        width: 100%;
+        filter: grayscale(100%);
+        transition:transform 0.5s;
+    }
+    .gallery::-webkit-scrollbar {
+
+        display: none;
+
+    }
+    .gallery-wrap
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       margin-bottom: 5%;
+
+    }
+    #backBtn ,#nextBtn
+    {
+        width: 50px;
+        cursor: pointer;
+        
+    }
+    .gallery div img:hover {
+        filter: grayscale(0);
+        cursor: pointer;
+     transform: scale(1.1);
+    }
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    /* ......................... */
+    
+    /* .............................. */
+
+    .nav-wrapper li {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .container1 {
+        width: 100%;
+    }
+
+    .container2 {
+        width: 100%;
+        width: 100%;
+    }
+
+    .text {
+        width: 100%;
+        margin-top: 450px;
+        height: 500px;
+    }
+
+    .bottom-img {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .img2 {
+        width: 100%;
+        font-size: 1.5rem;
+        font-weight: 700;
+        height: 10rem;
+        /* justify-content: center; */
+    }
+
+    .footer .second {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 5px;
+        margin: auto;
+    }
+
+    .footer img {
+        width: 150px;
+        height: 120px;
+    }
+    /* ........................... */
+    #sidebar {
+        /* display: none; */
+        top: 0;
+        position: fixed;
+        /* text-align: center; */
+        width: 100%;
+        left: -100%;
+        height: 100vh;
+        background-color: gray;
+        z-index: 1;
+    }
+    #sidebar ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #sidebar li {
+        
+        margin: auto;
+        /* margin-left: 10rem; */
+       
+        list-style: none;
+        margin: 1rem;
+        color: aliceblue;
+        font-weight: 600;
+        padding: 30px;
+        text-align: center;
+        /* border-bottom: 1px solid black; */
+
+    }
+    #sidebar li:hover{
+        background-color: #25353a;
+        box-shadow: 5px 10px #423434;
+        border-radius: 5px;
+    }
+
+    #sidebar a {
+        /* margin-left: 20rem; */
+        text-decoration: none;
+        margin: 1rem;
+        color: aliceblue;
+        font-weight: 600;
+    }
+
+    .toggle-btn {
+        position: absolute;
+        left: 105%;
+        top: 38px;
+    }
+
+    .toggle-btn span {
+        /* display: block; */
+        display: flex;
+       
+        background-color: gray;
+        width: 30px;
+        height: 5px;
+        margin: 3px;
+    }
+
+    #sidebar.active {
+        left: 0;
+    }
+    
+
+  
+   
+       
+
+        /* ////////////////////-------media querry-----////////////////////// */
+          
+        .containers
+        {
+                width: 100%;
+                height: 30vh;
+                margin: 0 5px;
+                display: flex;
+            }
+    
+        
+            .gallery div {
+                width: 100%;
+                display: grid;
+                /* grid-template-columns: auto auto auto; */
+                grid-template-rows: auto;
+                grid-gap:20px;
+                padding:0px ;
+                flex: none;
+            }
+        .gallery div img {
+            width: 100%;
+            filter: grayscale(100%);
+            transition:transform 0.5s;
+        }
+        .gallery::-webkit-scrollbar {
+    
+            display: none;
+    
+        }
+        .gallery-wrap
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           margin-bottom: 5%;
+    
+        }
+        #backBtn , #nextBtn
+        {
+            width: 20px;
+            cursor: pointer;
+        }
+        .gallery div img:hover {
+            filter: grayscale(0);
+            cursor: pointer;
+         transform: scale(1.2);
+        }
+    
+}
+
+
+/* ......................... */
+/* slider  */
+
+
+/* ..................... */
+@media only screen and (max-width: 2000px) and (min-width: 600px) {
+
+    #sidebar {
+        display: none;
+        position: fixed;
+        width: 30%;
+        left: -30%;
+        height: 100%;
+        background-color: gray;
+    }
+
+    #sidebar li {
+        list-style: none;
+        margin: 1rem;
+        color: aliceblue;
+        font-weight: 600;
+        padding: 30px;
+        text-align: center;
+        border-bottom: 1px solid black;
+
+    }
+
+    #sidebar a {
+        text-decoration: none;
+        margin: 1rem;
+        color: aliceblue;
+        font-weight: 600;
+    }
+
+    .toggle-btn {
+        position: absolute;
+        left: 105%;
+        top: 15px;
+    }
+
+    .toggle-btn span {
+        display: block;
+        background-color: gray;
+        width: 30px;
+        height: 5px;
+        margin: 3px;
+    }
+
+    #sidebar.active {
+        left: 0;
+    }
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400,700,800&amp;subset=latin-ext">
+</head>
+<script type="text/javascript">
+    function togglemenu() {
+        //console.log("clicked");
+        document.getElementById('sidebar').classList.toggle('active');
+    }
+</script>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#"> <img src="img/logo.png" style="width: 15rem;"></a>
+            <div id="sidebar" onclick="togglemenu()">
+                <div class="toggle-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul>
+                    <li> <a href="#">ETHERSCAN</a></li>
+                    <li><a href="#">DEXTOOLS</a></li>
+                    <li><a href="#">UNISWAP</a></li>
+                    <li><a href="#">TELEGRAM</a></li>
+                    <li><a href="#">TWITTER</a></li>
+                </ul>
+            </div>
+            <div class="nav-wrapper">
+                <ul class="">
+                    <li><a href="#">Etherscan</a></li>
+                    <li><a href="#">Dextools</a></li>
+                    <li><a href="#">Uniswap</a></li>
+                    <li><a href="https://t.me/HPOVM">Telegram</a></li>
+                    <li><a href="https://twitter.com/HPOV1235">Twitter</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="gallery-wrap">
+        <img src="/back.png" id="backBtn">
+
+
+
+        <div class="gallery">
+            <div>
+
+                <span class="containers"><img src="./finalimage.png"></span>
+                <span class="containers"><img src="./unnamed-1.webp"></span>
+                <span class=" containers"><img src="./unnamed-1.webp"></span>
+
+            </div>
+            <div>
+
+                <span class=" containers"><img src="./images.jpg" ></span>
+                <span class=" containers"><img src="./unnamed-1.webp" alt=""></span>
+                <span class=" containers"><img src="./finalimage.png" alt=""></span>
+
+            </div>
+ 
+        </div>
+        <img src="/next.png" id="nextBtn">
+    </div>
+    <!--  ----------------  Script for slider -->
+    <script>
+        let scrollContainer = document.querySelector(".gallery");
+        let backbtn = document.getElementById("backbtnt");
+        let nextbtn = document.getElementById("nextbtnt");
+        scrollContainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollContainer. scrollLeft+=evt.deltaX;
+            scrollContainer.style.scrollBehaviour ="auto";
+        })
+        nextBtn.addEventListener("click",()=>{
+            scrollContainer.style.scrollBehaviour ="smooth";
+           scrollContainer.scrollLeft +=1250;
+        });
+        backBtn.addEventListener("click",()=>{
+            scrollContainer.style.scrollBehaviour = "smooth";
+           scrollContainer.scrollLeft -=1250;
+        });
+    </script>
+
+
+    </div>
+    <div class="container">
+        <div class="container1">
+            <div class="content content1">100,000,000 Suply</div>
+            <div class="content content2">1% TEXAS SER</div>
+            <div class="content content3">LP BURNT FOREVER</div>
+            <div class="content content4">CONTRACT REANOUNECD</div>
+        </div>
+        <div class="container2">
+            <img src="https://www.hpsps1i.vip/img/1.png" alt="">
+        </div>
+    </div>
+    <div class="text">
+        <div class="text-main">
+            <h1>BETTER BUCKLE UP!</h1>
+            <p>Introducing HPSPSONIC10INU, the ultimate cryptocurrency meme that blasts through the crypto universe,
+                bringing Sonic-speed returns and hilarity to every hodler's journey. Strap in, because this meme coin is
+                here to revolutionize the crypto market with its lightning-fast gains and iconic character.</p>
+        </div>
+    </div>
+    <div class="bottom-img">
+        <div class="img1"> <img src="https://www.hpsps1i.vip/img/2.png" alt=""></div>
+        <div class="img2">
+            <p style="text-align: left; padding: 0.4rem;"> Everyone has an opinion about crypto traders; from mothers,
+                to
+                politicians and even crypto enthusiasts ourselves. An oldie but goodie:</p>
+        </div>
+    </div>
+    <div class="footer" style="padding: 50px;"">
+        <div style=" margin: auto; padding-top:50px; text-align: center;">
+        <h3> Let's keep in touch <br>
+            <p> Join here! </p>
+        </h3>
+    </div>
+    <div class="second">
+        <div>
+            <a href="https://t.me/HPOVM"><img
+                    src="https://img.freepik.com/free-vector/communication-logo-design-template_23-2149919615.jpg?w=740&t=st=1693646766~exp=1693647366~hmac=f6556ee36ab37209e4eef1c21807474bb1aa0b730c36d150a8a4bf53337ba25e"
+                    alt=""></a>
+        </div>
+        <div>
+            <a href="https://twitter.com/HPOV1235"><img
+                    src="https://cdn.siasat.com/wp-content/uploads/2022/01/Twitter_Logo.jpeg" alt=""></a>
+        </div>
+    </div>
+    </div>
+    <script src="./script3.js"></script>
+</body>
+
+</html>
